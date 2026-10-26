@@ -34,13 +34,13 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: clamp(12px, 5vw, 55px);
+    gap: clamp(240px, 5vw, 55px);
     padding: 24px;
     background: radial-gradient(ellipse, #191919 0%, #050505 75%);
 }
 
 button {
-    padding: 22px 18px;
+    padding: 20px 18px;
     font-size: 18px;
     font-weight: bold;
     border: 5px dashed transparent;
@@ -181,4 +181,21 @@ button:disabled {
     .cofre span { font-size: 13px; }
     .placar { gap: 18px; }
     .controles button { width: 100%; }
+}
+
+
+
+.arena {
+    overflow: hidden;
+}
+
+.cofre.fujão {
+    position: absolute;
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+    .cofre.fujão {
+        width: 31%;
+    }
 }
